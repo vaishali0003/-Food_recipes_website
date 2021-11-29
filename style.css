@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    min-height: 97vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('Food_Recipebg14.jpg') no-repeat center center/cover;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vmin;
+    background-color: #0000008f;
+    padding: 50px 0px;
+}
+
+.heading{
+    font-size: 41px;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    text-shadow: 0px 0px 4px #524e4e;
+}
+
+.subheading{
+    font-size: 21px;
+    color: #ffc107;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 64vmin;
+    padding: 10px;
+    /* margin-top: 35px; */
+    margin: 0px 10px;
+    font-size: 19px;
+}
+
+.search.bar2{
+    margin-top: 0px;
+}
+
+
+input{
+    outline: none;
+}
+#searchBtn{
+    text-align: center;
+    margin: 12px 0px;
+    padding: 12.2px 21px;
+    position: relative;
+    font-size: 18px;
+    /* background-color: #36251d; */
+    background-color: #0b0a0aed;
+    color: #babfc3;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#searchBtn:hover{
+    background-color: #311c0bb0;
+}
+
+.image{
+    width: 47vmin;
+    height: 46vmin;
+    margin: auto;
+    border-radius: 8px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.box{
+    margin: 11px;
+    padding: 10px;
+    background-color: #1f1b1b;
+    color: white;
+    border-radius: 4px;
+    width: 50vmin;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0px;
+    padding: 0px 6px;
+    align-items: center;
+}
+
+    .recipeName{
+    font-size: 20px;
+    margin-bottom: 0;
+    width: 28vmin;
+    }
+
+.infos{
+    padding: 0px 6px;
+}
+.info{
+    font-size: 15.5px;
+    margin-bottom: 10px;
+    font-weight: 400px;
+}
+.btnRecipe{
+    padding: 9px;
+    border: none;
+    background-color: #323030;
+    color: white;
+    border-radius: 2px;
+}
+
+.main-sec1{
+    min-height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #191818ed;
+}
+
+.error-main{
+    margin-top: -90px;
+    min-height: 100vh;
+}
+
+.homeP{
+    font-family: 'Ubuntu Mono', monospace;
+    color: rgb(32, 163, 146);
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.spinner{
+    text-align: center;
+    margin: 14px;
+}
+
+.main-sec2{
+    /* border: 2px solid red; */
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topRecipe{
+    color: rgb(0, 128, 100);
+}
+
+.form2{
+    flex-direction: row;
+    margin: 14px 10px;
+}
+.recipe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#oopsImg{
+filter: invert(100%);
+width: 86px;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorTxt{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: 'Arima Madurai', cursive;
+    text-align: center;
+}
+
+
+.loadMore{
+    width: 18vmin;
+    padding: 7px 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color:#4c9c4c;;
+    display: none;
+}
+.loadm{
+    display: none;
+}
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+.more-main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.more-main1{
+    width: 92%;
+   padding: 10px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    min-height: 110vh;
+}
+
+.img{
+    height: 47vmin;
+    width: 59vmin;
+    border: 2px solid #2a2525;
+}
+
+.fullInfo{
+    text-align: center;
+    color: #deb5e7;
+}
+
+.rName{
+    margin-top: 19px;
+    margin-bottom: 39px;
+    text-align: center;
+    /* color: #008072; */
+    font-size: 35px;
+}
+
+.recHead{
+    text-align: center;
+    font-size: 33px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+color: #2e5161;
+}
+
+.box2{
+    margin-bottom: 45px;
+}
+
+.box3{
+    margin-bottom: 25px;
+}
+
+.nutrients{
+    text-align: center;
+    font-size: 33px;
+}
+
+.fullInfo{
+    font-size: 20px;
+}
+
+.footer1{
+    color: #444040;
+    background-color: #926d454d;
+}
+
+.fullRecipe{
+    text-align: center;
+}
+
+.a2{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+    color: #2020bb;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 4px grey;
+    font-size: 15px;
+    padding: 2px 0px;
+}
+
+@media only screen and (max-width:719px){
+    .image {
+        width: 63vmin;
+        height: 46vmin;
+        margin: auto;
+    }
+
+    .search-bar{
+        width: 67vmin;
+    text-align: center;
+    padding: 9px;
+    margin: 4px 10px;
+    }
+
+    #searchBtn{
+        padding: 11px 22px;
+    }
+
+    .box{
+        width: 70vmin;
+    }
+}
+
+
+@media only screen and (max-width:672px){
+    .main{
+        width: 94vmin;
+    }
+    .search{
+        /* padding: 6px; */
+        padding: 6px;
+    }
+    .search-bar{
+    font-size: 17px;
+    }
+    .heading{
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .loadMore{
+        font-size: 14px;
+    }
+    .fullInfo {
+        font-size: 17px;
+    }
+    .rname{
+        font-size: 31px;
+    }
+    .box1{
+        min-height: 110vh;
+    }
+    .homeP{
+        font-size: 24px;
+    }
+    .rName{
+        font-size: 29px;
+    }
+    .box1 {
+        min-height: 100vh;
+    }
+    .recHead{
+        font-size: 29px;
+    }
+    .nutrients{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width:504px){
+.loadMore{
+    width: 24vmin;
+}
+.img{
+    height: 49vmin;
+    width: 66vmin;
+}
+
+.main{
+    padding: 43px 0px;
+}
+
+.search-bar {
+    font-size: 16px;
+}
+
+
+.heading {
+        font-size: 31.5px;
+    }
+
+}
+
+@media only screen and (max-width:468px){
+    .main {
+        padding: 27px 0px;
+    }
+    .heading {
+        font-size: 29.5px;
+        padding: 0px;
+    }
+    .search-bar{
+        font-size: 15px;
+        text-align: center;
+        padding: 9px 5px;
+    }
+    #searchBtn {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width:445px){
+    
+    .btnRecipe{
+        font-size: 14px;
+        padding: 7px;
+    }
+    input{
+        font-size: 13.5px;
+    }
+    #searchBtn{
+            font-size: 14px;
+    }
+    .search-bar2{
+        text-align: center;
+    }
+    
+    .img {
+        height: 51vmin;
+        width: 73vmin;
+    }
+    .errorTxt{
+        font-size: 23px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+    .heading{
+        padding: 10px 27px;
+        margin-bottom: 9px;
+    }
+    .subheading{
+    font-size: 17px;
+    margin-bottom: 26px;
+    }
+    .form2{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:408px){
+    .image{
+        width: 69vmin;
+        height: 51vmin;
+    }
+    .box {
+        width: 79vmin;
+    }
+    .homeP{
+        width: 24px;
+    }
+    .rName {
+        font-size: 27px;
+    }
+    .homeP {
+        font-size: 22px;
+    }
+    .nutrients {
+        font-size: 27px;
+    }
+    #oopsImg{
+        width: 82px;
+    }
+    
+}
+
+@media only screen and (max-width:389px){
+    .loadMore {
+        font-size: 13px;
+    }
+    .rName {
+        font-size: 25px;
+    }
+    .main {
+        padding: 29px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
